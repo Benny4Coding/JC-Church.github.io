@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color:#000000;
+    overflow:hidden;
+    background:linear-gradient(45deg, #FFD700, #b8860b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+    @keyframes
+gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+article {
+    width: 50%;
+    
+}
+footer {
+    color:#FFD700;
+    background-color: #000000;
+    padding: 1em;
+    text-align: center;  
+}
+p{
+    color:#fff;
+}
+.introText {
+    font-family:sans-serif;
+    font-Size: 20px;
+    margin-right: 5px;
+}
+.header {
+    padding: 0.5em;
+    background: #fff;
+    color:#ffd700 ;
+    text-align: center;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    background-color: #111;
+    padding:0;
+    margin:0;
+}
+.navbar li{
+    flex: 1;
+}
+.navbar a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar a:hover {
+    background-color: #FFD700;
+}
+
+.section {
+    width: 200;
+    height: 300;
+    border-radius: 10%;
+    padding: .5em 0;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+    rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+
+}
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 2em;
+    background: linear-gradient(to right,
+    rgb(255, 254, 254) 0%, rgb(253, 253, 253) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    color:#FFD700;
+    margin: 0;
+    padding: 5px;
+    width:100%;
+    box-sizing: border-box;
+}
+.image-row {
+    display: flex;
+    
+    padding:10px;
+    background: linear-gradient(to right,
+    rgb(255, 254, 254) 0%, rgb(253, 253, 253) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+}
+.image-row a{
+    text-decoration: none;
+}
+.image-row img{
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    justify-content:space-between;
+}
+.image-row img:hover {
+    transform: scale(1.1);
+}
